@@ -1,6 +1,6 @@
 {% set provider = "ec" %}
 {% set goname = "github.com/elastic/terraform-provider-"+provider.lower() %}
-{% set version = "0.12.5" %}
+{% set version = "0.13.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 2c771c927456fed1ce3f00acc782edf24241dd6b90849fc7664d52be006690cd
+  sha256: 3b4c188d914900ed45eac05d0bd6e8ee5d5e28e5d75fec0c7523a0f82e4814bf
 
 build:
   number: 0
